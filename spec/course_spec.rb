@@ -30,6 +30,12 @@ describe Course do
     end
   end
 
+  describe '#full' do
+    it 'returns true/false whether the course is full' do
+      expect(@course.full?).to be false
+    end
+  end 
+
 
   end
 end
