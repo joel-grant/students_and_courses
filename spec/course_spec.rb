@@ -24,5 +24,12 @@ describe Course do
     end
   end
 
-  
+  describe '#students' do
+    it 'returns the name of students enrolled in the course' do
+      expect(@course.students).to eq([])
+    end
+  end
+
+
+  end
 end
