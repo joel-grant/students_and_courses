@@ -16,5 +16,13 @@ describe Course do
     it 'returns the course name' do
       expect(@course.name).to eq("Calculus")
     end
-  end 
+  end
+
+  describe '#capacity' do
+    it 'returns the capacity of the course' do
+      expect(@course.capacity).to eq(2)
+    end
+  end
+
+  
 end
