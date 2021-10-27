@@ -6,4 +6,12 @@ class Course
     @capacity = capacity
     @students = []
   end
+
+  def full?
+    @students.size == @capacity
+  end
+
+  def enroll(student)
+    @students.push(student)
+  end 
 end
