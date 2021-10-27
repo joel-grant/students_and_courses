@@ -10,11 +10,6 @@ describe Student do
       expect(@student).to be_a Student
     end
 
-    xit 'receives a hash as a parameter' do
-      expect(@student.details).to be_a Hash
-    end
-
-
   end
 
   describe '#name' do
@@ -31,11 +26,12 @@ describe Student do
 
   describe '#scores' do
     it 'returns the student scores' do
-      expect(@student.scores).to be 
+      expect(@student.scores).to be
     end
   end
+
   # also tests the scores method.
-  describes '#log_score()' do
+  describe '#log_score()' do
     it 'can receive and store the students score' do
       @student.log_score(89)
       expect(@student.scores).to eq([89])
@@ -47,7 +43,7 @@ describe Student do
     end
   end
 
-  describes '#grade' do
+  describe '#grade' do
     it 'returns the students GPA' do
       @student.log_score(89)
       @student.log_score(78)
