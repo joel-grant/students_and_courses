@@ -1,5 +1,9 @@
 class Student
   def initializa(details)
-    details
+    @name = details[:name]
+    @age = details[:age]
+    @scores = []
   end 
+
+
 end
